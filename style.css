@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(228, 234, 217);
+}
+
+.landing{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.landing .side-container{
+    width: 250px;
+    height: 100%;
+}
+
+.landing .side-container .pattern{
+    width: 100%;
+    height: 250px;
+    background-image:repeating-linear-gradient(135deg,
+        rgb(0, 0, 0),
+        #000000 8px,
+        #ffffff00 8px,
+        #ffffff00 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .side-container .pattern .circle{
+    width: 60%;
+    height: 60%;
+    background:repeating-linear-gradient(45deg,
+    rgb(0, 0, 0),
+    #000000 8px,
+    #ffffff00 8px,
+    #ffffff00 16px);
+    border-radius: 50%;
+    background-color:rgb(228, 234, 217) ;
+    animation:circle 7s linear infinite;
+}
+
+@keyframes circle {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+.landing .side-container .nav{
+    width: 100%;
+    height: calc(100% - 250px);  /* use the remaining height */
+    display: flex;
+    font-family: 'Krona One';
+}
+
+
+.nav-item{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-right:  1px solid black;
+    font-size: 30px;
+    align-items: center;
+}
+
+.nav-item .item{
+    transform: rotate(90deg);
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-container{
+    height: 100%;
+    width: calc(100% - 250px);
+}
+
+.main-container .bottom-container{
+    width: 100%;
+    height: 200px;
+}
+
+.main-container .bottom-container .infinite-scroll{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-family: 'Krona One';
+     overflow: hidden;
+}
+
+.main-container .bottom-container .infinite-scroll .main-scroll{
+    width: 200%;
+    height: 100%;
+    display: flex;
+}
+
+.main-container .bottom-container .infinite-scroll .main-scroll .scroll-bar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    animation: scroll 10s linear infinite;
+    align-items: center;
+}
+
+.main-container .bottom-container .infinite-scroll .main-scroll .scroll-bar .item{
+    font-size: 20px;
+}
+
+.main-container .bottom-container .infinite-scroll .main-scroll .scroll-bar .desc{
+    font-size: 11px;
+    width: 100px;
+    display: flex;
+    font-family: 'Poppins';
+    flex-direction: column;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }100%{
+        transform: translateX(-100%);
+    }
+}
+
+.main-container .bottom-container .extra-container{
+    width: 100%;
+    display: flex;
+    height: calc(100% - 60px);
+}
+
+.main-container .bottom-container .extra-container .circles-bx{
+    width: auto;
+    height: 100%;
+    border-right: 1px solid black;
+    display: flex;
+}
+
+.main-container .bottom-container .extra-container .circles-bx .circle{
+    width: 140px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 100%;
+    position: relative;
+}
+
+.main-container .bottom-container .extra-container .circles-bx .circle::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    filter: invert(100%);
+    background-color: rgb(228, 234, 217);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container .bottom-container .extra-container .circles-bx .circle:first-child, .main-container .bottom-container .extra-container .circles-bx .circle:first-child::before {
+    background-color: black;
+}
+
+.main-container .bottom-container .extra-container .addr-box{
+    width: 350px;
+    height: auto;
+    font-family: 'Krona One';
+    font-size: 20px;
+    padding: 10px 20px;
+    line-height: 130%;
+    border-right: 1px solid black;
+}
+
+.main-container .bottom-container .extra-container .cta{
+    font-size: 30px;
+    font-family: 'Krona One';
+    width: calc(100% - 350px - 420px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-container .title-container {
+    width: 100%;
+    height: calc(100% - 200px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-container .title-container .title{
+    width: calc(100% - 250px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Krona One';
+    font-size: 70px;
+}
+.main-container .title-container .title .sub-text{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.main-container .title-container .right-bar{
+    width: 250px;
+    height: 100%;
+    border-left: 1px solid black;
+}
+
+.main-container .title-container .right-bar .nav2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: 'Krona One';
+}
+
+.right-bar .nav2 .nav-item .item {
+    transform: rotate(270deg);
+}
