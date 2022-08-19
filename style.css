@@ -250,6 +250,7 @@ body{
 .main-container .title-container .title .sub-text{
     font-size: 15px;
     margin-top: 10px;
+    position: relative;
 }
 
 .main-container .title-container .right-bar{
