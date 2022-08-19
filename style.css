@@ -244,6 +244,9 @@ body{
     font-family: 'Krona One';
     font-size: 70px;
 }
+
+
+
 .main-container .title-container .title .sub-text{
     font-size: 15px;
     margin-top: 10px;
@@ -264,4 +267,55 @@ body{
 
 .right-bar .nav2 .nav-item .item {
     transform: rotate(270deg);
+}
+
+.cta{
+    display: none;
+}
+
+@media only screen and (max-width: 1229px) {
+    .landing{
+        overflow: hidden;
+    }
+    .side-container, .right-bar{
+        display: none;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .main-container .title-container .title{
+        width: 100%;
+        font-size: 30px;
+    }
+        .title .pattern {
+            width: 220px;
+                height: 900px;
+                background: radial-gradient(circle, transparent 20%, rgb(228, 234, 217) 20%, rgb(228, 234, 217) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, rgb(228, 234, 217) 20%, rgb(228, 234, 217) 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#000000 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #000000 8px, transparent 8px) -4px 0;
+                background-color: rgba(0, 0, 0, 0);
+                background-size: auto, auto, auto, auto;
+                background-color: rgb(228, 234, 217);
+                background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: rotate(45deg) translateX(-130%);
+        }
+        .main-container .bottom-container .infinite-scroll .main-scroll .scroll-bar .desc{
+            margin-left: 10px;
+        }
+        .cta{
+            width: 120px;
+            height: 40px;
+            display: block;
+            margin-top: 15px;
+        }
+        .cta .btn{
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border: none;
+            background: black;
+            color: white;
+            font-family: 'Krona One';
+        }
 }
