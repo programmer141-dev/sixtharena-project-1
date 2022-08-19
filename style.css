@@ -252,6 +252,7 @@ body{
     margin-top: 10px;
     position: relative;
     background-color: rgb(228, 234, 217);
+    z-index: 4;
 }
 
 .main-container .title-container .right-bar{
