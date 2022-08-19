@@ -299,7 +299,7 @@ body{
                 position: absolute;
                 top: 0;
                 left: 0;
-                transform: rotate(45deg) translateX(-130%);
+                transform: rotate(45deg) translateX(-160%);
         }
         .main-container .bottom-container .infinite-scroll .main-scroll .scroll-bar .desc{
             margin-left: 10px;
