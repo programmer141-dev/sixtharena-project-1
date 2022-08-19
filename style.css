@@ -290,7 +290,7 @@ body{
     .main-container .title-container .title{
         width: 100%;
         font-size: 30px;
-        background: radial-gradient(circle, transparent 20%, rgb(228, 234, 217) 20%, rgb(228, 234, 217) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, rgb(228, 234, 217) 20%, rgb(228, 234, 217) 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#000000 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #000000 8px, transparent 8px) -4px 0;
+        background: radial-gradient(circle, transparent 20%, rgb(228, 234, 217) 20%, rgb(228, 234, 217) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, rgb(228, 234, 217) 20%, rgb(228, 234, 217) 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#787878 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #787878 8px, transparent 8px) -4px 0;
             background-size: auto, auto, auto, auto;
             background-color: rgb(228, 234, 217);
         background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
